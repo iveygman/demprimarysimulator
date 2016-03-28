@@ -1,0 +1,121 @@
+<html ng-app="delegateApp">
+<head>
+<script src="d3.min.js"></script>
+<!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+<link rel="stylesheet" href="delegatestyle.css">
+<!-- <script src="http://code.jquery.com/jquery-1.10.2.js"></script> -->
+<!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+
+</head>
+<body>
+
+<div id="main" ng-controller="DataCtrl">
+
+<div id="table-div">
+<table>
+<tr class="header-row">
+	<td>Date</td>
+	<td>Primary</td>
+	<td>Delegates</td>
+	<td colspan=2>Clinton</td>
+	<td colspan=2>Sanders</td>
+</tr>
+<tr class="header-row">
+	<td></td><td></td><td></td>
+	<td>Actual</td><td>Expected</td>
+	<td>Actual</td><td>Expected</td>
+</tr>
+<tr class="data-row" ng-repeat="primary in democrats">
+	<td>{{ primary.date }}</td>
+	<td>{{ primary.state }}</td>
+	<td class="number-cell">{{ primary.totalDelegates }}</td>
+	<td class="number-cell">
+		<span ng-if="!primary.notYetSet">{{ primary.Clinton.actual }}</span>
+		<span ng-if="primary.notYetSet" id="modeled-Clinton-{{ primary.state }}">{{ primary.Clinton.modeledDelegates }}</span>
+	</td>
+	<td class="number-cell">{{ primary.Clinton.expected }}</td>
+	<td class="number-cell">
+		<span ng-if="!primary.notYetSet">{{ primary.Sanders.actual }}</span>
+		<span ng-if="primary.notYetSet" id="modeled-Sanders-{{ primary.state }}">{{ primary.Sanders.modeledDelegates }}</span>
+	</td>
+	<td class="number-cell">{{ primary.Sanders.expected }}</td>
+	<td class="slider-cell">
+		<span ng-if"!primary.notYetSet">&nbsp;</span>
+		<span ng-if="primary.notYetSet" title="More votes for Clinton" class="range-label">C</span>
+		<input 	class="slider"
+				ng-disabled="!primary.notYetSet"
+				ng-model="primary.Sanders.modeledDelegates"
+				ng-change="sliderDidChange(primary.state, 'democrats', primary.Sanders.modeledDelegates)"
+				type="range" 
+				id="slider-{{ primary.state }}" 
+				min=0 
+				max="{{ primary.Clinton.expected + primary.Sanders.expected }}" 
+				value="{{ primary.Sanders.modeledDelegates }}">
+		<span ng-if="primary.notYetSet" title="More votes for Sanders" class="range-label">S</span>
+	</td>
+</tr>
+<tr>
+	<td>Totals so far:</td>
+	<td></td>
+	<td>{{ allDelegates.democrats }} </td>
+	<td>{{ totalDelegates.Clinton_actual }}</td>
+	<td>{{ totalDelegates.Clinton_expected }}</td>
+	<td>{{ totalDelegates.Sanders_actual }}</td>
+	<td>{{ totalDelegates.Sanders_expected }}</td>
+</tr>
+<tr>
+	<td>Totals including model:</td>
+	<td></td>
+	<td></td>
+	<td>{{ totalDelegates.Clinton }}</td>
+	<td></td>
+	<td>{{ totalDelegates.Sanders }}</td>
+	<td></td>
+</tr>
+</table>
+</div>
+
+<div id="plot">
+	<div id="scenarios">
+		<div class="scenario-group">
+			<span class="scenario" ng-click="reset()" title="For unfinished races, candidate wins exact # of expected delegates">Default</span>
+			<span class="scenario" ng-click="sandersPctBetter(1.1)" title="For unfinished races, Sanders does 10% better than expected">Sanders +10%</span>
+			<span class="scenario" ng-click="sandersPctBetter(1.2)" title="For unfinished races, Sanders does 20% better than expected">Sanders +20%</span>
+			<span class="scenario" ng-click="sandersPctBetter(1.3)" title="For unfinished races, Sanders does 30% better than expected">Sanders +30%</span>
+		</div>
+		<div class="scenario-group">
+			<span class="scenario" ng-click="sandersBigWin(true)" title="Sanders wins 75% in all large races">Sanders Wins In Big States</span>
+			<span class="scenario" ng-click="sandersBigWin(false)" title="Sanders wins 75% in all small races">Sanders Wins In Small States</span>
+		</div>
+	</div>
+	<div class="plot-title">
+		Superdelegates
+		<input class="checkbox" type="checkbox" ng-model="superDelegatesEnabled">
+		<br/>
+		<span ng-if="superDelegatesEnabled" title="More votes for Clinton" class="range-label">Clinton: {{ democratsuperdelegates.Clinton }}</span>
+		<input 	class="slider"
+				ng-disabled="!superDelegatesEnabled" 
+				ng-change="superDelegatesDidChange(democratsuperdelegates.Sanders)"
+				ng-model="democratsuperdelegates.Sanders"
+				type="range" 
+				id="slider-superdelegates" 
+				min=0
+				max="{{ democratsuperdelegates.total }}" 
+				value="{{ democratsuperdelegates.Sanders }}">
+		<span ng-if="superDelegatesEnabled" title="More votes for Sanders" class="range-label">Sanders: {{ democratsuperdelegates.Sanders }}</span>
+	</div>
+	<div class="plot-title">
+		Need {{ delegatesToWin.democrats }} delegates to win
+	</div>
+	<div id="subdiv-plot" title="{{ barValue }}">
+		<bar-chart height="options.height" data="data" hovered="hovered(args)"></bar-chart>
+	</div>
+</div>
+
+</div> <!-- main div -->
+
+
+</body>
+</html>

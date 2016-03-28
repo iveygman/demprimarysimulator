@@ -1,0 +1,131 @@
+body {
+	font-family: Optima, Helvetica, sans-serif;
+	font-size: 10pt;
+	background: #EFEFEF;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.axis path{
+    fill: none;
+    stroke: none;
+}
+.bar {
+    fill: steelblue;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.axis text {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+div#table-div {
+	float: left;
+	width: 50%;
+}
+
+div#plot {
+	float: right;
+	margin: 20px;
+	width: 500px;
+	max-width: 500px;
+	position: fixed;
+	right: 1em;
+	top: 0%;
+	height: 50%;
+	min-height: 50%;
+}
+
+div.plot-title {
+	text-align: center;
+	vertical-align: center;
+	margin-top: 1em;
+}
+
+div#subdiv-plot {
+	margin: auto;
+	float: bottom;
+}
+
+div#scenarios {
+	margin: auto;
+	float: top;
+}
+
+tr.header-row {
+	text-align: center;
+	vertical-align: center;
+}
+
+tr.data-row:nth-child(even) {
+	background: #DEB887;
+}
+
+tr.data-row:nth-child(odd) {
+	background: #EFEFEF;
+}
+
+td.number-cell {
+	text-align: center;
+	vertical-align: center;
+}
+
+.slider-cell {
+	max-width: 6em;
+	width: 6em;
+}
+
+input:disabled {
+	display: none;
+	color: #DDDDDD;
+	background: #DDDDDD;
+}
+
+input.slider {
+	max-width: 60%;
+	width: 60%;
+}
+
+.scenario-group {
+	margin-top: 1.5em;
+}
+
+td {
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.range-label {
+	font-size: 75%;
+}
+
+span.disabled {
+	display:none;
+}
+
+span.scenario {
+	background: #548540;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border: 2px solid black;
+	border-radius: 1px;
+}
+
+span.scenario:hover {
+	background: #CCC02B;
+}
