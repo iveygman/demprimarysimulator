@@ -1,0 +1,713 @@
+{
+    "parties": [
+        "democrats",
+        "republicans"
+    ],
+    "democratcandidates": [
+        "Clinton",
+        "Sanders"
+    ],
+    "democratsuperdelegates" : {
+        "Clinton": 0,
+        "Sanders": 0,
+        "total": 712
+    },
+    "democrats": [
+        {
+            "state": "Iowa",
+            "date": "2/1/2016",
+            "Clinton": {
+                "actual": 23,
+                "expected": 18
+            },
+            "Sanders": {
+                "actual": 21,
+                "expected": 26
+            }
+        },
+        {
+            "state": "New Hampshire",
+            "date": "2/9/2016",
+            "Clinton": {
+                "actual": 9,
+                "expected": 9
+            },
+            "Sanders": {
+                "actual": 15,
+                "expected": 15
+            }
+        },
+        {
+            "state": "Nevada",
+            "date": "2/20/2016",
+            "Clinton": {
+                "actual": 20,
+                "expected": 17
+            },
+            "Sanders": {
+                "actual": 15,
+                "expected": 18
+            }
+        },
+        {
+            "state": "South Carolina",
+            "date": "2/27/2016",
+            "Clinton": {
+                "actual": 39,
+                "expected": 32
+            },
+            "Sanders": {
+                "actual": 14,
+                "expected": 21
+            }
+        },
+        {
+            "state": "Alabama",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 44,
+                "expected": 35
+            },
+            "Sanders": {
+                "actual": 9,
+                "expected": 18
+            }
+        },
+        {
+            "state": "American Samoa",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 4,
+                "expected": 3
+            },
+            "Sanders": {
+                "actual": 2,
+                "expected": 3
+            }
+        },
+        {
+            "state": "Arkansas",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 22,
+                "expected": 18
+            },
+            "Sanders": {
+                "actual": 10,
+                "expected": 14
+            }
+        },
+        {
+            "state": "Colorado",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 28,
+                "expected": 30
+            },
+            "Sanders": {
+                "actual": 38,
+                "expected": 36
+            }
+        },
+        {
+            "state": "Georgia",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 73,
+                "expected": 65
+            },
+            "Sanders": {
+                "actual": 29,
+                "expected": 37
+            }
+        },
+        {
+            "state": "Massachusetts",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 46,
+                "expected": 41
+            },
+            "Sanders": {
+                "actual": 45,
+                "expected": 50
+            }
+        },
+        {
+            "state": "Minnesota",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 31,
+                "expected": 30
+            },
+            "Sanders": {
+                "actual": 46,
+                "expected": 47
+            }
+        },
+        {
+            "state": "Oklahoma",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 17,
+                "expected": 18
+            },
+            "Sanders": {
+                "actual": 21,
+                "expected": 20
+            }
+        },
+        {
+            "state": "Tennessee",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 44,
+                "expected": 33
+            },
+            "Sanders": {
+                "actual": 23,
+                "expected": 34
+            }
+        },
+        {
+            "state": "Texas",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 148,
+                "expected": 126
+            },
+            "Sanders": {
+                "actual": 74,
+                "expected": 96
+            }
+        },
+        {
+            "state": "Vermont",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 0,
+                "expected": 2
+            },
+            "Sanders": {
+                "actual": 16,
+                "expected": 14
+            }
+        },
+        {
+            "state": "Virginia",
+            "date": "3/1/2016",
+            "Clinton": {
+                "actual": 62,
+                "expected": 52
+            },
+            "Sanders": {
+                "actual": 33,
+                "expected": 43
+            }
+        },
+        {
+            "state": "Kansas",
+            "date": "3/5/2016",
+            "Clinton": {
+                "actual": 9,
+                "expected": 14
+            },
+            "Sanders": {
+                "actual": 24,
+                "expected": 19
+            }
+        },
+        {
+            "state": "Louisiana",
+            "date": "3/5/2016",
+            "Clinton": {
+                "actual": 37,
+                "expected": 33
+            },
+            "Sanders": {
+                "actual": 14,
+                "expected": 18
+            }
+        },
+        {
+            "state": "Nebraska",
+            "date": "3/5/2016",
+            "Clinton": {
+                "actual": 10,
+                "expected": 10
+            },
+            "Sanders": {
+                "actual": 15,
+                "expected": 15
+            }
+        },
+        {
+            "state": "Maine",
+            "date": "3/6/2016",
+            "Clinton": {
+                "actual": 9,
+                "expected": 10
+            },
+            "Sanders": {
+                "actual": 16,
+                "expected": 15
+            }
+        },
+        {
+            "state": "Michigan",
+            "date": "3/8/2016",
+            "Clinton": {
+                "actual": 63,
+                "expected": 63
+            },
+            "Sanders": {
+                "actual": 67,
+                "expected": 67
+            }
+        },
+        {
+            "state": "Mississippi",
+            "date": "3/8/2016",
+            "Clinton": {
+                "actual": 32,
+                "expected": 23
+            },
+            "Sanders": {
+                "actual": 4,
+                "expected": 13
+            }
+        },
+        {
+            "state": "Northern Marianas",
+            "date": "3/8/2016",
+            "Clinton": {
+                "actual": 4,
+                "expected": 3
+            },
+            "Sanders": {
+                "actual": 2,
+                "expected": 3
+            }
+        },
+        {
+            "state": "Florida",
+            "date": "3/15/2016",
+            "Clinton": {
+                "actual": 141,
+                "expected": 116
+            },
+            "Sanders": {
+                "actual": 73,
+                "expected": 98
+            }
+        },
+        {
+            "state": "Illinois",
+            "date": "3/15/2016",
+            "Clinton": {
+                "actual": 78,
+                "expected": 85
+            },
+            "Sanders": {
+                "actual": 78,
+                "expected": 71
+            }
+        },
+        {
+            "state": "Missouri",
+            "date": "3/15/2016",
+            "Clinton": {
+                "actual": 36,
+                "expected": 36
+            },
+            "Sanders": {
+                "actual": 35,
+                "expected": 35
+            }
+        },
+        {
+            "state": "North Carolina",
+            "date": "3/15/2016",
+            "Clinton": {
+                "actual": 60,
+                "expected": 57
+            },
+            "Sanders": {
+                "actual": 47,
+                "expected": 50
+            }
+        },
+        {
+            "state": "Ohio",
+            "date": "3/15/2016",
+            "Clinton": {
+                "actual": 81,
+                "expected": 71
+            },
+            "Sanders": {
+                "actual": 62,
+                "expected": 72
+            }
+        },
+        {
+            "state": "Florida",
+            "date": "3/15/2016",
+            "Clinton": {
+                "actual": 141,
+                "expected": 116
+            },
+            "Sanders": {
+                "actual": 73,
+                "expected": 98
+            }
+        },
+        {
+            "state": "Democrats Abroad",
+            "date": "3/21/2016",
+            "Clinton": {
+                "actual": 4,
+                "expected": 6.5
+            },
+            "Sanders": {
+                "actual": 9,
+                "expected": 6.5
+            }
+        },
+        {
+            "state": "Arizona",
+            "date": "3/22/2016",
+            "Clinton": {
+                "actual": 44,
+                "expected": 34
+            },
+            "Sanders": {
+                "actual": 31,
+                "expected": 41
+            }
+        },
+        {
+            "state": "Idaho",
+            "date": "3/22/2016",
+            "Clinton": {
+                "actual": 5,
+                "expected": 9
+            },
+            "Sanders": {
+                "actual": 18,
+                "expected": 14
+            }
+        },
+        {
+            "state": "Utah",
+            "date": "3/22/2016",
+            "Clinton": {
+                "actual": 6,
+                "expected": 14
+            },
+            "Sanders": {
+                "actual": 27,
+                "expected": 19
+            }
+        },
+        {
+            "state": "Alaska",
+            "date": "3/26/2016",
+            "Clinton": {
+                "actual": 3,
+                "expected": 7
+            },
+            "Sanders": {
+                "actual": 13,
+                "expected": 9
+            }
+        },
+        {
+            "state": "Hawaii",
+            "date": "3/26/2016",
+            "Clinton": {
+                "actual": 8,
+                "expected": 12
+            },
+            "Sanders": {
+                "actual": 17,
+                "expected": 13
+            }
+        },
+        {
+            "state": "Washington",
+            "date": "3/26/2016",
+            "Clinton": {
+                "actual": 27,
+                "expected": 42
+            },
+            "Sanders": {
+                "actual": 74,
+                "expected": 59
+            }
+        },
+        {
+            "state": "Wisconsin",
+            "date": "4/5/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 38
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 48
+            }
+        },
+        {
+            "state": "Wyoming",
+            "date": "4/9/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 5
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 9
+            }
+        },
+        {
+            "state": "New York",
+            "date": "4/19/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 122
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 125
+            }
+        },
+        {
+            "state": "Connecticut",
+            "date": "4/26/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 27
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 28
+            }
+        },
+        {
+            "state": "Delaware",
+            "date": "4/26/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 11
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 10
+            }
+        },
+        {
+            "state": "Maryland",
+            "date": "4/26/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 53
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 42
+            }
+        },
+        {
+            "state": "Pennsylvania",
+            "date": "4/26/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 93
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 96
+            }
+        },
+        {
+            "state": "Rhode Island",
+            "date": "4/26/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 11
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 13
+            }
+        },
+        {
+            "state": "Indiana",
+            "date": "5/3/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 39
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 44
+            }
+        },
+        {
+            "state": "Guam",
+            "date": "5/7/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 3.5
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 3.5
+            }
+        },
+        {
+            "state": "West Virginia",
+            "date": "5/10/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 12
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 17
+            }
+        },
+        {
+            "state": "Kentucky",
+            "date": "5/17/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 27
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 28
+            }
+        },
+        {
+            "state": "Oregon",
+            "date": "5/17/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 24
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 37
+            }
+        },
+        {
+            "state": "Virgin Islands",
+            "date": "6/4/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 3.5
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 3.5
+            }
+        },
+        {
+            "state": "Puerto Rico",
+            "date": "6/5/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 30
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 30
+            }
+        },
+        {
+            "state": "California",
+            "date": "6/7/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 236
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 239
+            }
+        },
+        {
+            "state": "Montana",
+            "date": "6/7/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 8
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 13
+            }
+        },
+        {
+            "state": "New Jersey",
+            "date": "6/7/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 65
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 61
+            }
+        },
+        {
+            "state": "New Mexico",
+            "date": "6/7/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 16
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 18
+            }
+        },
+        {
+            "state": "South Dakota",
+            "date": "6/7/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 8
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 12
+            }
+        },
+        {
+            "state": "North Dakota",
+            "date": "6/7/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 7
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 11
+            }
+        },
+        {
+            "state": "Washington D.C.",
+            "date": "6/14/2016",
+            "Clinton": {
+                "actual": null,
+                "expected": 12
+            },
+            "Sanders": {
+                "actual": null,
+                "expected": 8
+            }
+        }
+    ]
+}
