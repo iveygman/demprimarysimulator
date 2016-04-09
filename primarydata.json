@@ -449,11 +449,11 @@
             "state": "Wisconsin",
             "date": "4/5/2016",
             "Clinton": {
-                "actual": null,
+                "actual": 38,
                 "expected": 38
             },
             "Sanders": {
-                "actual": null,
+                "actual": 48,
                 "expected": 48
             }
         },
